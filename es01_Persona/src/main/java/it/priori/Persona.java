@@ -1,8 +1,6 @@
 package it.priori;
 /**
- * public class <b>Persona</b>
- * <br>extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html">Object</a>
- * <br>La classe Persona aiuta la sviluppatore a gestire dati di tipo Persona
+ * La classe Persona aiuta la sviluppatore a gestire dati di tipo Persona
  * 
  * @since JDK1.0
  */
@@ -25,13 +23,13 @@ public class Persona {
      * "https://docs.oracle.com/javase/7/docs/api/java/lang/String.html">Documentazione
      * ufficiale String </a>
      *
-     * @param nome    - stringa qualsiasi da assegnare come nome di un nuovo oggetto
+     * @param nome    stringa qualsiasi da assegnare come nome di un nuovo oggetto
      *                Persona
-     * @param cognome - stringa qualsiasi da assegnare come cognome di un nuovo
+     * @param cognome stringa qualsiasi da assegnare come cognome di un nuovo
      *                oggetto Persona
-     * @param codice  - stringa che rappresenta il nuovo codice fiscale dell'oggetto
+     * @param codice  stringa che rappresenta il nuovo codice fiscale dell'oggetto
      *                Persona
-     * @throws IllegalArgumentException - Se il codice fiscale fornito non e' valido
+     * @throws IllegalArgumentException Se il codice fiscale fornito non e' valido
      */
     public Persona(String nome, String cognome, String codice) {
         if (isValidCode(codice)) {
@@ -48,7 +46,7 @@ public class Persona {
      * VERO se le due persone hanno lo stesso nome (senza distinzione di maiuscole e
      * minuscole) altrimenti FALSO.
      * 
-     * @param p - oggetto Persona
+     * @param p oggetto Persona
      * @return Vero se le due persone confrontate hanno lo stesso nome, altrimenti
      *         falso
      */
@@ -72,7 +70,7 @@ public class Persona {
     /**
      * assegna una Stringa come nome di una persona
      * 
-     * @param nome - Stringa da assegnare come nome
+     * @param nome Stringa da assegnare come nome
      */
     public void setNome(String nome) {
         this.nome = nome;
@@ -90,7 +88,7 @@ public class Persona {
     /**
      * assegna una Stringa come cognome di una persona
      * 
-     * @param cognome - nuova stringa da assegnare come cognome a un oggetto Persona
+     * @param cognome nuova stringa da assegnare come cognome a un oggetto Persona
      *                già esistente
      */
     public void setCognome(String cognome) {
